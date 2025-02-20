@@ -84,30 +84,10 @@ class Trending extends Component {
     </div>
   )
 
-  getYear = publishedAt => {
-    let postedAt = formatDistanceToNow(new Date(publishedAt))
-    const postedAtList = postedAt.split(' ')
-
-    if (postedAtList.length === 3) {
-      postedAtList.shift()
-      postedAt = postedAtList.join(' ')
-    }
-
-    return postedAt
-  }
-
   renderSuccessView = lightTheme => {
     const {trendingVideos} = this.state
     return trendingVideos.map(eachVideo => {
-      const {
-        id,
-        title,
-        publishedAt,
-        viewCount,
-        profileImageUrl,
-        thumbnailUrl,
-        name,
-      } = eachVideo
+      const {id, title, publishedAt, viewCount, thumbnailUrl, name} = eachVideo
       return (
         <VideoListItem key={id}>
           <Link to={`/videos/${id}`} style={{textDecoration: 'none'}}>

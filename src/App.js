@@ -1,4 +1,4 @@
-import {Switch, Route, Redirect} from 'react-router-dom'
+import {Switch, Route} from 'react-router-dom'
 import {Component} from 'react'
 import Login from './components/Login'
 import Context from './context'

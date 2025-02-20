@@ -120,18 +120,6 @@ class AllVideos extends Component {
     </div>
   )
 
-  getYear = publishedAt => {
-    let postedAt = formatDistanceToNow(new Date(publishedAt))
-    const postedAtList = postedAt.split(' ')
-
-    if (postedAtList.length === 3) {
-      postedAtList.shift()
-      postedAt = postedAtList.join(' ')
-    }
-
-    return postedAt
-  }
-
   renderSuccessView = lightTheme => {
     const {videosList} = this.state
 

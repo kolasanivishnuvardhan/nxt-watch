@@ -27,7 +27,7 @@ class PremiumVideos extends Component {
 
     return (
       <Context.Consumer>
-        {value => (
+        {() => (
           <PremiumVideosContainer data-testid="banner">
             <CloseButtonContainer>
               <CloseButton onClick={this.onCloseBtn} data-testid="close">

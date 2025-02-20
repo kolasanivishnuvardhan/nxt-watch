@@ -1,5 +1,4 @@
 import {Component} from 'react'
-import {Link} from 'react-router-dom'
 import {HiFire} from 'react-icons/hi'
 import {formatDistanceToNow} from 'date-fns'
 import Header from '../Header'
